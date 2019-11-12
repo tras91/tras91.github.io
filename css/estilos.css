@@ -1,0 +1,197 @@
+/* FUENTE */
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 200;
+  src: local('Raleway ExtraLight'), local('Raleway-ExtraLight'), url(https://fonts.gstatic.com/s/raleway/v11/8KhZd3VQBtXTAznvKjw-k73hpw3pgy2gAi-Ip7WPMi0.woff) format('woff');
+}
+
+/* ESTILOS PARA EL CUERPO DE LA PAGINA */
+* {
+    box-sizing: border-box;
+}
+
+.main{
+    width: 80%;
+    float: left;
+}
+
+
+body{
+    background: #c4dadf;
+    color: rgba(255,255,255,.4); 
+    font-family: 'Raleway', sans-serif;
+    padding: 0 1em;
+}
+
+
+h1{
+    color: rgba(255,255,255,.7);
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: right;
+}
+
+article{
+    line-height: 1.5;
+    padding: .5em 0;
+}
+
+/* FOOTER */
+
+footer{
+   /* position: relative; */
+    border-top: 1px solid rgba(255,255,255,.1);
+    font-size: .8em;
+    margin-top: 2em;
+    padding-top: 1em;
+    text-align: right;    
+}
+
+footer a{
+     color: rgba(255,255,255,.7);
+     text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* CONTACTO  */
+
+.social{
+    color: black;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+
+}
+
+.social h1{
+    color: black;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.socialicons{
+    color: black;
+    font-size: 1.2em;
+    margin: auto;
+    width: 50%;
+}
+
+.socialicons a{
+    color: black;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+.socialicons a:hover{
+    color: white;
+    transition: .2s;
+    
+}
+
+.socialicons table{
+    margin: 0 auto;
+}
+.socialicons td{
+    padding-left: 30px;
+}
+
+/* DISEÑO WEB RESPONSIVE */
+/* 
+Iba a usar un grid de 12 columnas al final lo he descartado
+Calculo el porcentaje de para una columna 100% / 12 columnas = 8.33%
+*/
+
+@media screen and (max-width:768px){
+    .thumbnails a{
+        width: 50%;
+    }
+    .bio{
+        width: 100%;
+    }
+    .form{
+        width: 80%; 
+        margin: 30px;
+    }
+    .socialicons{
+        width: 80%;
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .thumbnails a{
+        width: 100%;
+    }
+    .bio{
+        width: 100%;
+    }
+    .form{
+        width: 90%;
+    }
+    .socialicons{
+        font-size: 1em;
+        width: 100%;
+        padding: 0px;
+    }
+    .socialheader{
+        font-size: 1.1em;
+    }
+    .social{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:375px){
+    .thumbnails a{
+        width: 100%;
+    }
+    .bio{
+        width: 100%;
+    }
+    .form{
+
+        width: 100%;
+    }
+    .socialicons{
+        font-size: 1em;
+        width: 100%;
+        padding: 0px;
+    }
+    .socialheader{
+        font-size: 1.1em;
+    }
+    .social{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:320px){
+    .thumbnails a{
+        width: 100%;
+    }
+    .bio{
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+    }
+    .socialicons{
+        font-size: 1em;
+        width: 100%;
+        padding: 0px;
+    }
+    .socialheader{
+        font-size: 1.1em;
+    }
+    .social{
+        font-size: 1em;
+    }
+}
